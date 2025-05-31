@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "RequestHelpMicroservices.RequestForHelp.RequestForHelpController",
+    "Method": "CreateRequestForHelpAsync",
+    "RelativePath": "api/RequestForHelp/CreateRequestForHelp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestForHelpService",
+        "Type": "RequestHelpMicroservices.RequestForHelp.RequestHelp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestHelpMicroservices.RequestForHelp.RequestForHelpController",
+    "Method": "DeleteRequestForHelpAsync",
+    "RelativePath": "api/RequestForHelp/DeleteRequestForHelp",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestForHelpId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestHelpMicroservices.RequestForHelp.RequestForHelpController",
+    "Method": "GetRequestsByEmployeeAsync",
+    "RelativePath": "api/RequestForHelp/GetRequestsByEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestHelpMicroservices.RequestForHelp.RequestForHelpController",
+    "Method": "GetRequestsByEmployeeIdAsync",
+    "RelativePath": "api/RequestForHelp/GetRequestsByEmployeeId/{empId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RequestHelpMicroservices.RequestForHelp.RequestForHelpController",
+    "Method": "UpdateHRRequestAsync",
+    "RelativePath": "api/RequestForHelp/UpdateHRRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestForHelpService",
+        "Type": "RequestHelpMicroservices.RequestForHelp.RequestHelp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

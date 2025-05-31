@@ -1,0 +1,176 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RequestHelpMicroservices",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/RequestForHelp/CreateRequestForHelp": {
+      "post": {
+        "tags": [
+          "RequestForHelp"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RequestForHelp/GetRequestsByEmployeeId/{empId}": {
+      "get": {
+        "tags": [
+          "RequestForHelp"
+        ],
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RequestForHelp/GetRequestsByEmployee": {
+      "get": {
+        "tags": [
+          "RequestForHelp"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RequestForHelp/UpdateHRRequest": {
+      "put": {
+        "tags": [
+          "RequestForHelp"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestHelp"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/RequestForHelp/DeleteRequestForHelp": {
+      "delete": {
+        "tags": [
+          "RequestForHelp"
+        ],
+        "parameters": [
+          {
+            "name": "requestForHelpId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RequestHelp": {
+        "required": [
+          "requestDetails",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "requestForHelpId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "requestDetails": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string"
+          },
+          "status": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "respondedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "respondedStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeeName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

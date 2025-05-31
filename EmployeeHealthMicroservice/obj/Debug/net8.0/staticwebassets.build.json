@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "43fYS4pORrXRVWXPjjPyRIzbtjJhiVxoNgTE8T7xRfc=",
+  "Source": "EmployeeHealthMicroservice",
+  "BasePath": "_content/EmployeeHealthMicroservice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

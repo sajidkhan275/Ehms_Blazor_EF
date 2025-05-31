@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "RIYE18fAmnq5UNwrbqWwKF9DzbdsyvYVTKbrOe2b4+U=",
+  "Source": "RequestHelpMicroservices",
+  "BasePath": "_content/RequestHelpMicroservices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
